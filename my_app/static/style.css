@@ -1,0 +1,17 @@
+body {
+    background-color: #fff7fb;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #ff8fab;
+}
+
+button {
+    background-color: #ff8fab;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
