@@ -1,15 +1,15 @@
 body {
-    background-color: #ed0077;
+    background-color: #8c9db3;
     text-align: center;
     font-family: sans-serif;
 }
 
 h1 {
-    color: #ff8fab;
+    color: #0c235a;
 }
 
 button {
-    background-color: #ff8fab;
+    background-color: #4868ab;
     color: white;
     border: none;
     border-radius: 20px;
