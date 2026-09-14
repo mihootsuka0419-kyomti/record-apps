@@ -6,7 +6,7 @@ body {
 }
 
 
-/* ヘッダー */
+
 
 header {
     background-color: #ffb6c9;
@@ -20,7 +20,6 @@ header h1 {
 }
 
 
-/* メイン */
 
 main {
     width: 90%;
@@ -29,7 +28,6 @@ main {
 }
 
 
-/* 入力フォーム */
 
 .form-section {
     background-color: white;
@@ -69,7 +67,7 @@ textarea {
 }
 
 
-/* ボタン */
+
 
 button {
     display: block;
@@ -92,7 +90,6 @@ button:hover {
 }
 
 
-/* 旅行記一覧 */
 
 .records-section {
     margin-top: 40px;
@@ -124,7 +121,6 @@ button:hover {
 }
 
 
-/* フッター */
 
 footer {
     text-align: center;
@@ -135,7 +131,6 @@ footer {
 }
 
 
-/* スマホ */
 
 @media (max-width: 600px) {
 

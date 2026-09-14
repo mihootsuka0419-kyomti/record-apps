@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(BASE_DIR, "data.json")
 
 
-# 保存されている旅行記を読み込む
+
 def load_records():
     if not os.path.exists(DATA_FILE):
         return []
@@ -16,7 +16,7 @@ def load_records():
         return json.load(f)
 
 
-# 旅行記を保存する
+
 def save_records(records):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(records, f, ensure_ascii=False, indent=2)
@@ -24,10 +24,10 @@ def save_records(records):
 
 class MyHandler(BaseHTTPRequestHandler):
 
-    # GET
+    
     def do_GET(self):
 
-        # トップページ
+        
         if self.path == "/":
             file_path = os.path.join(
                 BASE_DIR,
@@ -40,7 +40,6 @@ class MyHandler(BaseHTTPRequestHandler):
 
             records = load_records()
 
-            # 旅行記をHTMLにする
             record_html = ""
 
             for record in records:
@@ -52,7 +51,7 @@ class MyHandler(BaseHTTPRequestHandler):
                 </div>
                 """
 
-            # {{RECORDS}} を旅行記一覧に置き換える
+            
             html = html.replace("{{RECORDS}}", record_html)
 
             self.send_response(200)
@@ -64,7 +63,7 @@ class MyHandler(BaseHTTPRequestHandler):
 
             self.wfile.write(html.encode("utf-8"))
 
-        # CSS
+        
         elif self.path == "/static/style.css":
 
             file_path = os.path.join(
@@ -89,43 +88,43 @@ class MyHandler(BaseHTTPRequestHandler):
             self.send_response(404)
             self.end_headers()
 
-    # POST
+    
     def do_POST(self):
 
         if self.path == "/save":
 
-            # 送られてきたデータの大きさ
+           
             content_length = int(
                 self.headers["Content-Length"]
             )
 
-            # データを受け取る
+           
             body = self.rfile.read(content_length).decode("utf-8")
 
-            # データを整理する
+            
             data = parse_qs(body)
 
             place = data.get("place", [""])[0]
             date = data.get("date", [""])[0]
             memory = data.get("memory", [""])[0]
 
-            # 新しい旅行記
+            
             new_record = {
                 "place": place,
                 "date": date,
                 "memory": memory
             }
 
-            # 今までの旅行記を取得
+            
             records = load_records()
 
-            # 新しい旅行記を追加
+            
             records.append(new_record)
 
-            # 保存
+            
             save_records(records)
 
-            # トップページへ戻る
+        
             self.send_response(303)
             self.send_header("Location", "/")
             self.end_headers()
