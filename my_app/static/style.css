@@ -1,18 +1,154 @@
 body {
+    margin: 0;
     background-color: #fff7fb;
-    text-align: center;
     font-family: sans-serif;
+    color: #555;
 }
 
-h1 {
-    color: #ff8fab;
+
+/* ヘッダー */
+
+header {
+    background-color: #ffb6c9;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
 }
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+
+/* メイン */
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+
+/* 入力フォーム */
+
+.form-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #ff8fab;
+    text-align: center;
+}
+
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ffd6e3;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+/* ボタン */
 
 button {
+    display: block;
+    margin: 25px auto 0;
+
     background-color: #ff8fab;
     color: white;
+
     border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-radius: 25px;
+
+    padding: 12px 30px;
+
+    font-size: 16px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6f96;
+}
+
+
+/* 旅行記一覧 */
+
+.records-section {
+    margin-top: 40px;
+}
+
+
+.record {
+    background-color: white;
+
+    margin: 20px 0;
+    padding: 20px;
+
+    border-radius: 20px;
+
+    border-left: 6px solid #ffb6c9;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.record h3 {
+    color: #ff8fab;
+    margin-top: 0;
+}
+
+
+.record .date {
+    color: #999;
+}
+
+
+/* フッター */
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+
+    color: #aaa;
+}
+
+
+/* スマホ */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 90%;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
 }
