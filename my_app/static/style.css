@@ -1,24 +1,18 @@
 body {
-    background-color: #8c9db3;
+    background-color: #fff7fb;
     text-align: center;
     font-family: sans-serif;
 }
 
 h1 {
-    color: #0c235a;
-    font-size: 36px;
-}
-
-input:focus {
-    outline: none;
-    border-color: #19165d;
+    color: #ff8fab;
 }
 
 button {
-    background-color: #4868ab;
+    background-color: #ff8fab;
     color: white;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
+    cursor: pointer;
 }
-
