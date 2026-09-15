@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #fff7fb;
+    background-color: #cccccc;
     font-family: sans-serif;
     color: #555;
 }
@@ -37,7 +37,7 @@ main {
 }
 
 h2 {
-    color: #ff8fab;
+    color: #2c2a3f;
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ textarea {
     box-sizing: border-box;
     width: 100%;
     padding: 12px;
-    border: 2px solid #ffd6e3;
+    border: 2px solid #676c78;
     border-radius: 12px;
     font-size: 16px;
 }
@@ -73,7 +73,7 @@ button {
     display: block;
     margin: 25px auto 0;
 
-    background-color: #ff8fab;
+    background-color: #45779e;
     color: white;
 
     border: none;
@@ -86,7 +86,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff6f96;
+    background-color: #2e2992;
 }
 
 
@@ -104,14 +104,14 @@ button:hover {
 
     border-radius: 20px;
 
-    border-left: 6px solid #ffb6c9;
+    border-left: 6px solid #122787;
 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 
 .record h3 {
-    color: #ff8fab;
+    color: #baa84b;
     margin-top: 0;
 }
 
