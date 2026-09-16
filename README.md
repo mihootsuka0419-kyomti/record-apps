@@ -1,6 +1,6 @@
 各種URL
 
-アプリURL
+アプリURL（自分用）
 http://localhost:8000
 
 GitHub URL
