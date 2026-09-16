@@ -1,4 +1,4 @@
-/Users/ootsukamiho/Desktop/Python 2026/record-apps/my_app
+各種URL
 
 アプリURL
 http://localhost:8000
